@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portfolio : Carlos J. Ruiz</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="shortcut icon" href="./assets/icons/carlos-icon.png" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="header__navbar ">
+    <nav class="navbar">
+      <ul class="nav__items">
+        <li class="nav__item home-a"><a href="#home">Home</a></li>
+        <li class="nav__item about-a"><a href="#about">Acerca de mi</a></li>
+        <li class="nav__item habilidades-a"><a href="#habilidades">Mis habilidades</a></li>
+        <li class="nav__item experiencia-a"><a href="#experiencia">Experiencia</a></li>
+        <li class="nav__item portfolio-a"><a href="#portfolio">Portafolio</a></li>
+        <li class="nav__item education-a"><a href="#education">Educación</a></li>
+        <li class="nav__item contacto-a"><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav_mobile">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
+  </header>
+
+  <div class="home section" id="home">
+    <div class="home__images">
+      <div class="home__image-movile">
+        <img src="./assets/img/foto_pmovil.png" alt="">
+      </div>
+    </div>
+    <div class="home__info">
+      <h1 class="home__info-name">Carlos J. Ruiz</h1>
+      <h2 class="home__info-description">FullStack Developer</h2>
+      <div class="home__info-icons">
+        <a class="icon linkedin" href="https://www.linkedin.com/in/carlos-ruiz-424431225/" target="_blank">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_104_618)">
+              <path d="M6.06007 21.3158H1.70632V7.29529H6.06007V21.3158ZM3.88057 5.3828C2.48857 5.3828 1.35907 4.2293 1.35907 2.8373C1.35907 2.16855 1.62473 1.5272 2.0976 1.05433C2.57047 0.581453 3.21183 0.315796 3.88057 0.315796C4.54931 0.315796 5.19067 0.581453 5.66354 1.05433C6.13641 1.5272 6.40207 2.16855 6.40207 2.8373C6.40207 4.2293 5.27257 5.3828 3.88057 5.3828ZM22.3546 21.3158H18.0106V14.4908C18.0106 12.864 17.9776 10.7783 15.7471 10.7783C13.4836 10.7783 13.1363 12.5453 13.1363 14.3738V21.3158H8.78707V7.29529H12.9623V9.2078H13.0231C13.6043 8.10605 15.0241 6.94355 17.1421 6.94355C21.5483 6.94355 22.3583 9.84529 22.3583 13.614V21.3158H22.3546Z" />
+            </g>
+            <defs>
+              <clipPath id="clip0_104_618">
+                <rect width="24" height="24" fill="white" transform="translate(0.315613 0.315796)"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a class="icon instagram" href="https://www.instagram.com/ruboca.fx" target="_blank">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.213 9.19159C10.4927 9.19159 9.08879 10.5955 9.08879 12.3158C9.08879 14.0361 10.4927 15.44 12.213 15.44C13.9333 15.44 15.3372 14.0361 15.3372 12.3158C15.3372 10.5955 13.9333 9.19159 12.213 9.19159ZM21.5833 12.3158C21.5833 11.0221 21.595 9.74002 21.5224 8.44862C21.4497 6.94862 21.1075 5.61737 20.0107 4.5205C18.9115 3.42128 17.5825 3.08143 16.0825 3.00878C14.7888 2.93612 13.5068 2.94784 12.2154 2.94784C10.9216 2.94784 9.63957 2.93612 8.34816 3.00878C6.84816 3.08143 5.51691 3.42362 4.42003 4.5205C3.32081 5.61971 2.98097 6.94862 2.90831 8.44862C2.83566 9.74237 2.84738 11.0244 2.84738 12.3158C2.84738 13.6072 2.83566 14.8916 2.90831 16.183C2.98097 17.683 3.32316 19.0142 4.42003 20.1111C5.51925 21.2103 6.84816 21.5502 8.34816 21.6228C9.64191 21.6955 10.9239 21.6838 12.2154 21.6838C13.5091 21.6838 14.7911 21.6955 16.0825 21.6228C17.5825 21.5502 18.9138 21.208 20.0107 20.1111C21.1099 19.0119 21.4497 17.683 21.5224 16.183C21.5974 14.8916 21.5833 13.6096 21.5833 12.3158V12.3158ZM12.213 17.1228C9.55285 17.1228 7.40597 14.976 7.40597 12.3158C7.40597 9.65565 9.55285 7.50878 12.213 7.50878C14.8732 7.50878 17.02 9.65565 17.02 12.3158C17.02 14.976 14.8732 17.1228 12.213 17.1228ZM17.2169 8.43456C16.5958 8.43456 16.0943 7.93299 16.0943 7.3119C16.0943 6.69081 16.5958 6.18925 17.2169 6.18925C17.838 6.18925 18.3396 6.69081 18.3396 7.3119C18.3398 7.45938 18.3108 7.60545 18.2545 7.74174C18.1981 7.87803 18.1155 8.00187 18.0112 8.10615C17.9069 8.21044 17.7831 8.29312 17.6468 8.34948C17.5105 8.40583 17.3644 8.43474 17.2169 8.43456V8.43456Z"/>
+          </svg>
+        </a>
+        <a class="icon twitter" href="https://www.twitter.com/rubocafx" target="_blank">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.8604 6.27596C21.1432 6.58534 20.3627 6.808 19.5588 6.89471C20.3934 6.39886 21.0185 5.61549 21.3166 4.69159C20.5334 5.1575 19.6754 5.48421 18.7807 5.65721C18.4067 5.25743 17.9544 4.93895 17.452 4.7216C16.9496 4.50426 16.4078 4.39272 15.8604 4.39393C13.6455 4.39393 11.8643 6.18924 11.8643 8.39237C11.8643 8.70175 11.9018 9.01112 11.9627 9.30878C8.64631 9.13534 5.6885 7.55096 3.72209 5.12518C3.36379 5.73717 3.17603 6.43399 3.17834 7.14315C3.17834 8.53065 3.88381 9.75409 4.95959 10.4736C4.32562 10.4487 3.70649 10.2744 3.15256 9.96503V10.0142C3.15256 11.9572 4.526 13.5674 6.35647 13.9377C6.01278 14.027 5.65922 14.0726 5.30412 14.0736C5.04397 14.0736 4.79787 14.0478 4.54944 14.0127C5.05569 15.5971 6.5299 16.7478 8.28537 16.7853C6.91193 17.8611 5.19162 18.4939 3.32366 18.4939C2.9885 18.4939 2.67913 18.4822 2.35803 18.4447C4.12991 19.5814 6.23225 20.2377 8.49631 20.2377C15.8463 20.2377 19.8682 14.1486 19.8682 8.86347C19.8682 8.69003 19.8682 8.51659 19.8565 8.34315C20.6346 7.77362 21.3166 7.06815 21.8604 6.27596Z"/>
+          </svg>
+        </a>
+      </div>
+      <button class="home__info-contact open_modal-contact1">
+        <svg width="30" height="30" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.33332 9.33337H46.6667C49.2333 9.33337 51.3333 11.4334 51.3333 14V42C51.3333 44.5667 49.2333 46.6667 46.6667 46.6667H9.33332C6.76666 46.6667 4.66666 44.5667 4.66666 42V14C4.66666 11.4334 6.76666 9.33337 9.33332 9.33337Z" fill="#1FB59A" stroke="#147563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M51.3333 14L28 30.3333L4.66666 14" fill="#1FB59A"/>
+          <path d="M51.3333 14L28 30.3333L4.66666 14" stroke="#147563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Contactame
+      </button>
+    </div>
+  </div>
+
+  <div class="about section" id="about">
+    <h2 class="section__h2" >Acerca de mí</h2>
+    <p class="about-p">Soy FullStack Developer en tecnología JavaScript también con experiencia en la elaboración de programas de Mantenimiento Mecanico e Industrial, Control y Gestión de Sistemas de Inventarios; esto ha mejorado mi habilidad para comprender y solucionar problemas técnicos complejos, me ha enseñado la importancia de la organización y la planificación, lo que me ayuda a trabajar más eficiente y efectivamente en equipo.</p>
+    <p class="about-p"> Mi objetivo es siempre crear soluciones innovadoras y de alta calidad para satisfacer las necesidades del cliente. Enfocado en la mejora continua, la capacidad de aprender y adaptarme a nuevas tecnologías.</p>
+  </div>
+
+  <div class="habilidades section" id="habilidades">
+    <h2 class="section__h2">Mis Habilidades</h2>
+    <div class="habilidades__skills">
+      <div class="skill">
+        <div class="skill-img">
+          <img src="./assets/img/html-5.png" alt="HTML_img">
+        </div>
+        <span class="skill-name">HTML</span>
+      </div>
+      <div class="skill">
+        <div class="skill-img">
+          <img src="./assets/img/css-3.png" alt="CSS_img">
+        </div>
+        <span class="skill-name">CSS</span>
+      </div>
+      <div class="skill">
+        <div class="skill-img">
+          <img src="./assets/img/js.png" alt="JavaScript_img">
+        </div>
+        <span class="skill-name">JavaScript</span>
+      </div>
+      <div class="skill">
+        <div class="skill-img">
+          <img src="./assets/img/git.png" alt="GIT_img">
+        </div>
+        <span class="skill-name">GIT</span>
+      </div>
+      <div class="skill">
+        <div class="skill-img">
+          <img src="./assets/img/react.png" alt="REACT.JS_img">
+        </div>
+        <span class="skill-name">REACT.JS</span>
+      </div>
+      <div class="skill">
+        <div class="skill-img">
+          <img src="./assets/img/redux.png" alt="REDUX_img">
+        </div>
+        <span class="skill-name">REDUX</span>
+      </div>
+      <div class="skill">
+        <div class="skill-img">
+          <img src="./assets/img/node.png" alt="NODE.JS_img">
+        </div>
+        <span class="skill-name">NODE.JS</span>
+      </div>
+      <div class="skill">
+        <div class="skill-img">
+          <img src="./assets/img/express.png" alt="Express_img">
+        </div>
+        <span class="skill-name">Express</span>
+      </div>
+      <div class="skill">
+        <div class="skill-img">
+          <img src="./assets/img/postgres.png" alt="POSTGRE-SQL_img">
+        </div>
+        <span class="skill-name">POSTGRE - SQL</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="experience section" id="experiencia">
+    <h2 class="section__h2">Experiencia</h2>
+    <div class="experience__info-works">
+      <div class="work">
+        <div class="work__image">
+          <img class="work__image-img" src="./assets/img/suplicon.png" alt="suplicon_image">
+        </div>
+        <div class="work__info">
+          <h3 class="work__info-h3">Inversiones SUPLICON, C.A.</h3>
+          <p class="work__info-p">
+            Control de Inventarios<br>
+            2022-2023
+          </p>
+        </div>
+        <h3 class="work__h3">1 años</h3>
+      </div>
+      <div class="work">
+        <div class="work__image">
+          <img class="work__image-img" src="./assets/img/moy.jpg" alt="moy_image">
+        </div>
+        <div class="work__info">
+          <h3 class="work__info-h3">Inversiones MOY, SAC</h3>
+          <p class="work__info-p">
+            Gestor de Mantenimiento<br>
+            2020-2022
+          </p>
+        </div>
+        <h3 class="work__h3">2 años</h3>
+      </div>
+      <div class="work">
+        <div class="work__image">
+          <img class="work__image-img" src="./assets/img/imiabeca.jpg" alt="imiabeca_image">
+        </div>
+        <div class="work__info">
+          <h3 class="work__info-h3">IMIABECA</h3>
+          <p class="work__info-p">
+            Coordinador de Mantenimiento<br>
+            2014-2018
+          </p>
+        </div>
+        <h3 class="work__h3">4 años</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio section" id="portfolio">
+    <h2 class="section__h2">Portafolio</h2>
+    <div class="portfolio__projects">
+
+
+      <div class="portfolio__project project1">
+        <div class="portfolio__project-image">
+          <img src="./assets/img/proyect1.png" alt="ecommerce">
+        </div>
+        <h3 class="portfolio__project-name">E-commerce Vanilla</h3>
+      </div>
+      <dialog class="modal__proyecto-1">
+        <div class="modal__proyect">
+          <i class='bx bx-x close_modal-1'></i>
+          <h3 class="modal__proyect-h3" >E-commerce Vanilla</h3>
+          <p class="modal__proyect-description">Aplicación de simulación de tienda virtual</p>
+          <h4 class="modal__proyect-h4">Tecnologias utilizadas</h4>
+          <div class="modal__proyect__tecnologies">
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-html5 bx-icon'></i>
+              <p class="modal__proyect__tecnology-name">HTML</p>
+            </div>
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-css3 bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">CSS</p>
+            </div>
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-javascript bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">JS</p>
+            </div>
+          </div>
+          <div class="modal__proyect__ancors">
+            <div class="modal__proyect__ancor">
+              <i class='bx bxl-netlify' ></i>
+              <a href="https://ecommerce-vanilla-ruboca.netlify.app/" target="_blank">Ver Pagina...</a>
+            </div>
+            <div class="modal__proyect__ancor">
+              <i class='bx bxl-github' ></i>
+              <a href="https://github.com/ruboca1980/ecommerce-vanilla" target="_blank">Ver Repositorio...</a>
+            </div>
+          </div>
+        </div>
+      </dialog>
+
+
+      <div class="portfolio__project project2">
+        <div class="portfolio__project-image">
+          <img src="./assets/img/proyecto2.png" alt="famous quotes">
+        </div>
+        <h3 class="portfolio__project-name">Famous Quotes</h3>
+      </div>
+      <dialog class="modal__proyecto-2">
+        <div class="modal__proyect">
+          <i class='bx bx-x close_modal-2'></i>
+          <h3 class="modal__proyect-h3">Famous Quotes</h3>
+          <p class="modal__proyect-description">Aplicación de Frases Celebres</p>
+          <h4 class="modal__proyect-h4">Tecnologias utilizadas</h4>
+          <div class="modal__proyect__tecnologies">
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-react bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">React</p>
+            </div>
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-css3 bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">CSS</p>
+            </div>
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-javascript bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">JS</p>
+            </div>
+          </div>
+          <div class="modal__proyect__ancors">
+            <div class="modal__proyect__ancor">
+              <i class='bx bxl-netlify' ></i>
+              <a href="https://famous-quotes-ruboca.netlify.app" target="_blank">Ver Pagina...</a>
+            </div>
+            <div class="modal__proyect__ancor">
+              <i class='bx bxl-github' ></i>
+              <a href="https://github.com/ruboca1980/famous_quotes" target="_blank">Ver Repositorio...</a>
+            </div>
+          </div>
+        </div>
+      </dialog>
+
+
+      <div class="portfolio__project project3">
+        <div class="portfolio__project-image">
+          <img src="./assets/img/proyect3.png" alt="weather app">
+        </div>
+        <h3 class="portfolio__project-name">Weather App</h3>
+      </div>
+      <dialog class="modal__proyecto-3">
+        <div class="modal__proyect">
+          <i class='bx bx-x close_modal-3'></i>
+          <h3 class="modal__proyect-h3">Weather App</h3>
+          <p class="modal__proyect-description">Aplicación del Clima</p>
+          <h4 class="modal__proyect-h4">Tecnologias utilizadas</h4>
+          <div class="modal__proyect__tecnologies">
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-react bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">React</p>
+            </div>
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-css3 bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">CSS</p>
+            </div> 
+          </div>
+          <div class="modal__proyect__ancors">
+            <div class="modal__proyect__ancor">
+              <i class='bx bxl-netlify' ></i>
+              <a href="https://weather-app-ruboca.netlify.app/" target="_blank">Ver Pagina...</a>
+            </div>
+            <div class="modal__proyect__ancor">
+              <i class='bx bxl-github' ></i>
+              <a href="https://github.com/ruboca1980/weather-app" target="_blank">Ver Repositorio...</a>
+            </div>
+          </div>
+        </div>
+      </dialog>
+
+
+      <div class="portfolio__project project4">
+        <div class="portfolio__project-image">
+          <img src="./assets/img/proyect4.png" alt="Rick and Morty">
+        </div>
+        <h3 class="portfolio__project-name">App Rick and Morty</h3>
+      </div>
+      <dialog class="modal__proyecto-4">
+        <div class="modal__proyect">
+          <i class='bx bx-x close_modal-4'></i>
+          <h3 class="modal__proyect-h3">App Rick and Morty</h3>
+          <p class="modal__proyect-description">Aplicación de personajes de Rick and Morty </p>
+          <h4 class="modal__proyect-h4">Tecnologias utilizadas</h4>
+          <div class="modal__proyect__tecnologies">
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-react bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">React</p>
+            </div>
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-css3 bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">CSS</p>
+            </div>
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-javascript bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">JS</p>
+            </div>
+          </div>
+          <div class="modal__proyect__ancors">
+            <div class="modal__proyect__ancor">
+              <i class='bx bxl-netlify' ></i>
+              <a href="https://rickandmorty-ruboca.netlify.app/" target="_blank">Ver Pagina...</a>
+            </div>
+            <div class="modal__proyect__ancor">
+              <i class='bx bxl-github' ></i>
+              <a href="https://github.com/ruboca1980/rickandmortyapp" target="_blank">Ver Repositorio...</a>
+            </div>
+          </div>
+        </div>
+      </dialog>
+
+
+      <div class="portfolio__project project5">
+        <div class="portfolio__project-image">
+          <img src="./assets/img/proyect5.png" alt="CRUD User">
+        </div>
+        <h3 class="portfolio__project-name">CRUD User's</h3>
+      </div>
+      <dialog class="modal__proyecto-5">
+        <div class="modal__proyect">
+          <i class='bx bx-x close_modal-5'></i>
+          <h3 class="modal__proyect-h3">CRUD User's</h3>
+          <p class="modal__proyect-description">App en la que se puede crear un usuario y luego de esto puedes leerlo, editarlo o eliminarlo conforme lo necesites</p>
+          <h4 class="modal__proyect-h4">Tecnologias utilizadas</h4>
+          <div class="modal__proyect__tecnologies">
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-react bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">React</p>
+            </div>
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-css3 bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">CSS</p>
+            </div>
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-javascript bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">JS</p>
+            </div>
+          </div>
+          <div class="modal__proyect__ancors">
+            <div class="modal__proyect__ancor">
+              <i class='bx bxl-netlify' ></i>
+              <a href="https://users-crud-ruboca.netlify.app" target="_blank">Ver Pagina...</a>
+            </div>
+            <div class="modal__proyect__ancor">
+              <i class='bx bxl-github' ></i>
+              <a href="https://github.com/ruboca1980/CRUD-Users" target="_blank">Ver Repositorio...</a>
+            </div>
+          </div>
+        </div>
+      </dialog>
+
+
+      <div class="portfolio__project project6">
+        <div class="portfolio__project-image">
+          <img src="./assets/img/proyect6.png" alt="App Pokemon">
+        </div>
+        <h3 class="portfolio__project-name">App Pokemon</h3>
+      </div>
+      <dialog class="modal__proyecto-6">
+        <div class="modal__proyect">
+          <i class='bx bx-x close_modal-6'></i>
+          <h3 class="modal__proyect-h3">App Pokemon</h3>
+          <p class="modal__proyect-description">Sitio de Busqueda tipo catalogo, de personajes de Pokemon</p>
+          <h4 class="modal__proyect-h4">Tecnologias utilizadas</h4>
+          <div class="modal__proyect__tecnologies">
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-react bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">React</p>
+            </div>
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-css3 bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">CSS</p>
+            </div>
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-javascript bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">JS</p>
+            </div>
+          </div>
+          <div class="modal__proyect__ancors">
+            <div class="modal__proyect__ancor">
+              <i class='bx bxl-netlify' ></i>
+              <a href="https://app-pokemon-ruboca.netlify.app" target="_blank">Ver Pagina...</a>
+            </div>
+            <div class="modal__proyect__ancor">
+              <i class='bx bxl-github' ></i>
+              <a href="https://github.com/ruboca1980/pokedex" target="_blank">Ver Repositorio...</a>
+            </div>
+          </div>
+        </div>
+      </dialog>
+
+
+      <div class="portfolio__project project7">
+        <div class="portfolio__project-image">
+          <img src="./assets/img/proyecto7.png" alt="ecommerce">
+        </div>
+        <h3 class="portfolio__project-name">E-commerce con React</h3>
+      </div>
+      <dialog class="modal__proyecto-7">
+        <div class="modal__proyect">
+          <i class='bx bx-x close_modal-7'></i>
+          <h3 class="modal__proyect-h3">E-commerce con React</h3>
+          <p class="modal__proyect-description">Aplicación de simulación de tienda virtual</p>
+          <h4 class="modal__proyect-h4">Tecnologias utilizadas</h4>
+          <div class="modal__proyect__tecnologies">
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-react bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">React</p>
+            </div>
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-css3 bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">CSS</p>
+            </div>
+            <div class="modal__proyect__tecnology">
+              <i class='bx bxl-javascript bx-icon' ></i>
+              <p class="modal__proyect__tecnology-name">JS</p>
+            </div>
+          </div>
+          <div class="modal__proyect__ancors">
+            <div class="modal__proyect__ancor">
+              <i class='bx bxl-netlify' ></i>
+              <a href="https://ecommerce-react-ruboca.netlify.app" target="_blank">Ver Pagina...</a>
+            </div>
+            <div class="modal__proyect__ancor">
+              <i class='bx bxl-github' ></i>
+              <a href="https://github.com/ruboca1980/ecommerce-react" target="_blank">Ver Repositorio...</a>
+            </div>
+          </div>
+        </div>
+      </dialog>
+    </div>
+  </div>
+
+
+
+
+  <div class="education section" id="education">
+    <h2 class="section__h2">Educacion</h2>
+    <div class="education__info">
+      <div class="edu__info">
+        <div class="edu__info-img">
+          <img src="./assets/img/ugma.jpg" alt="ugma">
+        </div>
+        <h3 class="edu__info-h3">Ingeniria de Mantenimiento</h3>
+      </div>
+      <div class="edu__info">
+        <div class="edu__info-img">
+          <a href="https://certificates.academlo.com/en/verify/55578830623202" target="_blank">
+            <img src="./assets/img/cert2.png" alt="certificado">
+          </a>
+        </div>
+        <h3 class="edu__info-h3">Fundamentos en HTML, CSS y JavaScript</h3>
+      </div>
+      <div class="edu__info">
+        <div class="edu__info-img">
+          <a href="https://certificates.academlo.com/en/verify/09945559137439" target="_blank">
+            <img src="./assets/img/cert1.png" alt="certificado">
+          </a>
+        </div>
+        <h3 class="edu__info-h3">Front-End Development with React</h3>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="contact section" id="contacto">
+    <h2 class="section__h2" >Contacto</h2>
+    <div class="contact_items">
+      <div class="contact_item">
+        <svg class="item-icon-cell" width="90" height="90" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M51.3333 39.4799V46.4799C51.336 47.1298 51.2029 47.773 50.9425 48.3684C50.6822 48.9638 50.3004 49.4983 49.8215 49.9376C49.3427 50.3769 48.7773 50.7114 48.1617 50.9196C47.5462 51.1278 46.8939 51.2051 46.2467 51.1466C39.0666 50.3664 32.1697 47.9129 26.11 43.9833C20.4723 40.4008 15.6925 35.621 12.11 29.9833C8.16661 23.8961 5.71257 16.9656 4.94667 9.75327C4.88836 9.10803 4.96504 8.45772 5.17183 7.84373C5.37863 7.22975 5.711 6.66555 6.14779 6.18706C6.58458 5.70857 7.11621 5.32626 7.70884 5.06449C8.30148 4.80272 8.94213 4.66722 9.59 4.66661H16.59C17.7224 4.65546 18.8202 5.05646 19.6788 5.79485C20.5374 6.53324 21.0982 7.55865 21.2567 8.67994C21.5521 10.9201 22.1 13.1196 22.89 15.2366C23.2039 16.0718 23.2719 16.9794 23.0858 17.852C22.8997 18.7246 22.4673 19.5255 21.84 20.1599L18.8767 23.1233C22.1983 28.9649 27.0351 33.8016 32.8767 37.1233L35.84 34.1599C36.4744 33.5326 37.2754 33.1003 38.1479 32.9142C39.0205 32.7281 39.9282 32.796 40.7633 33.1099C42.8803 33.8999 45.0798 34.4478 47.32 34.7433C48.4535 34.9032 49.4886 35.4741 50.2286 36.3474C50.9685 37.2208 51.3617 38.3356 51.3333 39.4799Z" fill="#1FB59A"/>
+        </svg>
+        <h3 class="item-h3">Número celular</h3>
+        <p class="item-p">(+58) 412-3483413</p>
+      </div>
+      <div class="contact_item">
+        <svg class="open_modal-contact2 sobre" width="90" height="90" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.33332 9.33337H46.6667C49.2333 9.33337 51.3333 11.4334 51.3333 14V42C51.3333 44.5667 49.2333 46.6667 46.6667 46.6667H9.33332C6.76666 46.6667 4.66666 44.5667 4.66666 42V14C4.66666 11.4334 6.76666 9.33337 9.33332 9.33337Z" fill="#1FB59A" stroke="#147563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M51.3333 14L28 30.3333L4.66666 14" fill="#1FB59A"/>
+          <path d="M51.3333 14L28 30.3333L4.66666 14" stroke="#147563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3 class="item-h3">E-mail</h3>
+        <p class="item-p">ruboca1980@gmail.com</p>
+      </div>
+    </div>
+    <div class="home__info-icons">
+      <a class="icon linkedin icon_social_contact" href="https://www.linkedin.com/in/carlos-ruiz-424431225/" target="_blank">
+        <svg width="35" height="35" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_104_618)">
+            <path d="M6.06007 21.3158H1.70632V7.29529H6.06007V21.3158ZM3.88057 5.3828C2.48857 5.3828 1.35907 4.2293 1.35907 2.8373C1.35907 2.16855 1.62473 1.5272 2.0976 1.05433C2.57047 0.581453 3.21183 0.315796 3.88057 0.315796C4.54931 0.315796 5.19067 0.581453 5.66354 1.05433C6.13641 1.5272 6.40207 2.16855 6.40207 2.8373C6.40207 4.2293 5.27257 5.3828 3.88057 5.3828ZM22.3546 21.3158H18.0106V14.4908C18.0106 12.864 17.9776 10.7783 15.7471 10.7783C13.4836 10.7783 13.1363 12.5453 13.1363 14.3738V21.3158H8.78707V7.29529H12.9623V9.2078H13.0231C13.6043 8.10605 15.0241 6.94355 17.1421 6.94355C21.5483 6.94355 22.3583 9.84529 22.3583 13.614V21.3158H22.3546Z" />
+          </g>
+          <defs>
+            <clipPath id="clip0_104_618">
+              <rect width="34" height="34" fill="white" transform="translate(0.315613 0.315796)"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <a class="icon instagram icon_social_contact" href="https://www.instagram.com/ruboca.fx" target="_blank">
+        <svg width="35" height="35" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.213 9.19159C10.4927 9.19159 9.08879 10.5955 9.08879 12.3158C9.08879 14.0361 10.4927 15.44 12.213 15.44C13.9333 15.44 15.3372 14.0361 15.3372 12.3158C15.3372 10.5955 13.9333 9.19159 12.213 9.19159ZM21.5833 12.3158C21.5833 11.0221 21.595 9.74002 21.5224 8.44862C21.4497 6.94862 21.1075 5.61737 20.0107 4.5205C18.9115 3.42128 17.5825 3.08143 16.0825 3.00878C14.7888 2.93612 13.5068 2.94784 12.2154 2.94784C10.9216 2.94784 9.63957 2.93612 8.34816 3.00878C6.84816 3.08143 5.51691 3.42362 4.42003 4.5205C3.32081 5.61971 2.98097 6.94862 2.90831 8.44862C2.83566 9.74237 2.84738 11.0244 2.84738 12.3158C2.84738 13.6072 2.83566 14.8916 2.90831 16.183C2.98097 17.683 3.32316 19.0142 4.42003 20.1111C5.51925 21.2103 6.84816 21.5502 8.34816 21.6228C9.64191 21.6955 10.9239 21.6838 12.2154 21.6838C13.5091 21.6838 14.7911 21.6955 16.0825 21.6228C17.5825 21.5502 18.9138 21.208 20.0107 20.1111C21.1099 19.0119 21.4497 17.683 21.5224 16.183C21.5974 14.8916 21.5833 13.6096 21.5833 12.3158V12.3158ZM12.213 17.1228C9.55285 17.1228 7.40597 14.976 7.40597 12.3158C7.40597 9.65565 9.55285 7.50878 12.213 7.50878C14.8732 7.50878 17.02 9.65565 17.02 12.3158C17.02 14.976 14.8732 17.1228 12.213 17.1228ZM17.2169 8.43456C16.5958 8.43456 16.0943 7.93299 16.0943 7.3119C16.0943 6.69081 16.5958 6.18925 17.2169 6.18925C17.838 6.18925 18.3396 6.69081 18.3396 7.3119C18.3398 7.45938 18.3108 7.60545 18.2545 7.74174C18.1981 7.87803 18.1155 8.00187 18.0112 8.10615C17.9069 8.21044 17.7831 8.29312 17.6468 8.34948C17.5105 8.40583 17.3644 8.43474 17.2169 8.43456V8.43456Z"/>
+        </svg>
+      </a>
+      <a class="icon twitter icon_social_contact" href="https://www.twitter.com/rubocafx" target="_blank">
+        <svg width="35" height="35" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21.8604 6.27596C21.1432 6.58534 20.3627 6.808 19.5588 6.89471C20.3934 6.39886 21.0185 5.61549 21.3166 4.69159C20.5334 5.1575 19.6754 5.48421 18.7807 5.65721C18.4067 5.25743 17.9544 4.93895 17.452 4.7216C16.9496 4.50426 16.4078 4.39272 15.8604 4.39393C13.6455 4.39393 11.8643 6.18924 11.8643 8.39237C11.8643 8.70175 11.9018 9.01112 11.9627 9.30878C8.64631 9.13534 5.6885 7.55096 3.72209 5.12518C3.36379 5.73717 3.17603 6.43399 3.17834 7.14315C3.17834 8.53065 3.88381 9.75409 4.95959 10.4736C4.32562 10.4487 3.70649 10.2744 3.15256 9.96503V10.0142C3.15256 11.9572 4.526 13.5674 6.35647 13.9377C6.01278 14.027 5.65922 14.0726 5.30412 14.0736C5.04397 14.0736 4.79787 14.0478 4.54944 14.0127C5.05569 15.5971 6.5299 16.7478 8.28537 16.7853C6.91193 17.8611 5.19162 18.4939 3.32366 18.4939C2.9885 18.4939 2.67913 18.4822 2.35803 18.4447C4.12991 19.5814 6.23225 20.2377 8.49631 20.2377C15.8463 20.2377 19.8682 14.1486 19.8682 8.86347C19.8682 8.69003 19.8682 8.51659 19.8565 8.34315C20.6346 7.77362 21.3166 7.06815 21.8604 6.27596Z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <dialog class="modal__cont">
+    <div class="modal__contact">
+      <i class='bx bx-x close_modal-contact'></i>
+      <h2 class="section__h2">Contacto</h2>
+      <div class="modal__contact-container">
+        <form class="modal__contact-form" action="https://formsubmit.co/ruboca1980@gmail.com" method="POST">
+          <input type="text" name="name" id="name" placeholder="Nombre..." class="modal__contact-input">
+          
+          <input type="email" name="email" id="email" placeholder="e-mail..." class="modal__contact-input">
+          
+          <input type="text" name="subject" id="subject" placeholder="Asunto..." class="modal__contact-input">
+          
+          <textarea name="coments" id="coments" cols="30" rows="5" placeholder="Mensaje..." class="modal__contact-input"></textarea>
+          
+          <input type="submit" value="Enviar" class="modal__contact-btn">
+          
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+  
+          <input type="hidden" name="_captcha" value="false">
+        </form>
+        
+        <div class="modal__contact-info">
+          <div class="modal__contact__info-item">
+            <div class="modal__contact__info__item-image">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="cf-icon-grid" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"></path></svg>
+            </div>
+            <p class="modal__contact__info__item-p">ruboca1980@gmail.com</p>
+          </div>
+          <div class="modal__contact__info-item">
+            <div class="modal__contact__info__item-image">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="cf-icon-grid" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path></svg>
+            </div>
+            <p class="modal__contact__info__item-p">(+58) 412 3483413</p>
+          </div>
+          <div class="modal__contact__info-item">
+            <div class="modal__contact__info__item-image">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="cf-icon-grid" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"></path></svg>
+            </div>
+            <p class="modal__contact__info__item-p">Anzoategui, Venezuela.</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </dialog>
+
+</body>
+</html>
